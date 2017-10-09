@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity= "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"  crossorigin= "anonymous">
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Scill_donor</title>
+</head>
+<body>
+	<div id="modal-1" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/button.png" alt="button"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-5 col-sm-5 col-xs-12 col-list">
+								<button type="button" class="btn button-1">Registration</button>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-12 col-list">
+								<button type="button" class="btn button-2" data-toggle="modal" data-target="#modal-2"">login</button>
+							</div>
+							<div class="col-md-1 col-sm-1"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-10 col-sm-10 col-list">
+								<ul class="list-unstyled list-inline text-center social">
+									<li><a href="#"><span class="icon fb"></span></a></li>
+									<li><a href="#"><span class="icon vk"></span></a></li>
+									<li><a href="#"><span class="icon google"></span></a></li>
+									<li><a href="#"><span class="icon yandex"></span></a></li>
+									<li><a href="#"><span class="icon mail"></span></a></li>
+								</ul>
+								<div class="col-md-1 col-sm-1"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-10 col-sm-10 col-list">
+								<form action="#" class="modal-form" id="form-1" method="post">
+									<div id="error" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="input-email">Email</label>
+										<input type="email" class="form-control" id="input-email" required="required" placeholder="Login/email" pattern="[A-z0-9_.-]{5,}" name="email">
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="input-password">Password</label>
+										<input type="password" class="form-control" id="input-password" name="password" required="required" placeholder="Password" pattern="[A-z0-9_.-]{5,}">
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="input-password1">Password</label>
+										<input type="password" class="form-control" id="input-password-1" name="password" required="required" placeholder="Repeat password" pattern="[A-z0-9_.-]{5,}">
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="check1" name="checkbox">
+										<label for="check1"> I agree with <a href="#">the rules of the site</a></label>
+									</div>
+									<button id="save-1" type="submit" class="btn button-3">to come in</button>
+								</form>
+							</div>
+							<div class="col-md-1 col-sm-1"></div>
+						</div>
+						<div class="container">
+							<div class="alert alert-success hidden alert-modal" id="success-alert">
+								<h2>Success</h2>
+								<div>Our data was successfully sent.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-2" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/button.png" alt="button"></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-5 col-sm-5 col-xs-12 col-list">
+								<button type="button" class="btn button-1" data-toggle="modal" data-target="#modal-1"">Registration</button>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-12 col-list">
+								<button type="button" class="btn button-2">login</button>
+							</div>
+							<div class="col-md-1 col-sm-1"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-10 col-sm-10 col-list">
+								<ul class="list-unstyled list-inline text-center social">
+									<li><a href="#"><span class="icon fb"></span></a></li>
+									<li><a href="#"><span class="icon vk"></span></a></li>
+									<li><a href="#"><span class="icon google"></span></a></li>
+									<li><a href="#"><span class="icon yandex"></span></a></li>
+									<li><a href="#"><span class="icon mail"></span></a></li>
+								</ul>
+								<div class="col-md-1 col-sm-1"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-10 col-sm-10 col-list">
+								<form action="#" class="modal-form" id="form-2" method="post">
+									<div id="error-1" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="input-email">Email</label>
+										<input type="email" class="form-control" id="input-email-1" name="email" required="required" placeholder="Login/email">
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="input-password">Password</label>
+										<input type="password" class="form-control" id="input-password-2" name="password" required="required" placeholder="Password" pattern="[A-z0-9_.-]{3,}">
+										<span class="glyphicon form-control-feedback"></span>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="check-2" name="checkbox">
+										<label for="check2"> Remember me </label>
+										<a href="#" class="forgot">Forgot password?</a>
+									</div>
+									<button id="save-2"	type="submit" class="btn button-3">to come in</button>
+								</form>
+							</div>
+							<div class="col-md-1 col-sm-1"></div>
+						</div>
+						<div class="container">
+							<div class="alert alert-success hidden alert-modal" id="success-alert-1">
+								<h2>Success</h2>
+								<div>Our data was successfully sent.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#nav-main">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="nav-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><img src="images/search.png" alt="search"></a></li>
+					<li><a href="#modal-2" data-toggle="modal" class="login">LOGIN</a></li>
+					<li><a href="#modal-1" class="btn btn-blue navbar-btn" data-toggle="modal">SING UP FREE</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-sm-"></div>
+				<div class="col-md-8 col-sm-12  text-center">
+					<h1>Skilldonor <br> service is the online training</h1>
+					<p>All of our classes are held only in the online mode <br>	between teachers and pupils. This type of information <br>exchange It allows the most efficient and comfortable <br>to ensure learning proces</p>
+				</div>
+				<div class="col-md-2 col-sm-"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<section class="categories">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-7">
+						<h2>Categories of subjects</h2>
+						<p class="categorie">The number of subjects and lessons constantly <br>updated thanks to the arrival of new teachers. <br>You can always choose a teacher and learn from him.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-5"></div>
+				</div>
+				<div class="row icon-png">
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center panel-1">
+						<div class="block1">
+						<a href="#demo-2" data-toggle="collapse" data-parent="panel-1" aria-expanded="true"><img src="images/icon1.png" alt="icon1" class="img-responsive">
+							<p class="icon-text icon-text-1">Languages</p>
+						</a>
+					</div>
+						<div id="demo-2" class="collapse in-main" aria-expanded="true">
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4  text-center panel-1">
+						<a href="#demo-3" data-toggle="collapse" data-parent="panel-1" aria-expanded="true"><img src="images/icon3.png" alt="icon3" class="icon-png3 img-responsive">
+							<p class="icon-text icon-text-3">Music</p>
+						</a>
+						<div id="demo-3" class="collapse in-main"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<div class="block2">
+						<a href="#demo-4" data-toggle="collapse" data-parent="icon-png" aria-expanded="true"><img src="images/icon5.png" alt="icon5" class="icon-png5 img-responsive">
+							<p class="icon-text">IT</p>
+						</a>
+					</div>
+						<div id="demo-4" class="collapse in-main"></div>
+						
+					</div>
+				</div>
+				<div class="row icon-png1">
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<div class="block1">
+						<a href="#demo-1" data-toggle="collapse" aria-expanded="true"><img src="images/icon2.png" alt="icon2" class="img-responsive">
+							<p class="icon-text">Art and Design</p>
+						</a>
+					</div>
+						<div id="demo-1" class="collapse in in-main" aria-expanded="true">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4">
+									<ul class="list-unstyled text-left list-collapse">
+										<li><a href="#">Photo</a></li>
+										<li><a href="#">Graphic design</a></li>
+										<li><a href="#">Interior design</a></li>
+										<li><a href="#">Landscape design</a></li>
+										<li><a href="#">Tactile design</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4">
+									<ul class="list-unstyled text-left list-collapse list-collapse-1">
+										<li><a href="#">Painting</a></li>
+										<li><a href="#">Sculpture</a></li>
+										<li><a href="#">Cclay modeling</a></li>
+										<li><a href="#">3d modeling</a></li>
+										<li><a href="#">Compositing</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4">
+									<ul class="list-unstyled text-left list-collapse list-collapse-2">
+										<li><a href="#">Color separation</a></li>
+										<li><a href="#">Color correction</a></li>
+										<li><a href="#">Illustration</a></li>
+										<li><a href="#">Old master</a></li>
+										<li><a href="#">Video</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<a href="#demo-5" data-toggle="collapse" aria-expanded="true">
+							<img src="images/icon4.png" alt="icon4" class="icon-png4 img-responsive">
+							<p class="icon-text icon-text-4">Exact Sciences</p>
+						</a>
+						<div id="demo-5" class="collapse in-main"></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<div class="block2">
+						<a href="#demo-6" data-toggle="collapse" aria-expanded="true">
+							<img src="images/icon6.png" alt="icon6" class="icon-png6 img-responsive">
+							<p class="icon-text">History</p>
+						</a>
+					</div>
+						<div id="demo-6" class="collapse in-main"></div>
+					</div>
+				</div>		
+			</section>
+			<section class="lectures">
+				<div class="row">
+					<div class="col-lg-6 col-l-md-6 col-sm-7">
+						<h2>New Lectures</h2>
+					</div>
+					<div class="col-lg-6 col-l-md-6 col-sm-5"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<ul class="media-list">
+							<li class="media media-main">
+								<div class="media-left">
+									<a href=""><img src="images/icon1.jpg" alt="icon1" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">Fundamentals <br>of Thermodynamics</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6 col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6 col-xs-6">
+											<p  class="text-center"><span class="amount">1600</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p class="">Ekaterina Dmitrieva</p>
+								</div>
+							</li>
+							<li class="media media-main">
+								<div class="media-left">
+									<a href=""><img src="images/icon4.jpg" alt="icon4" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">Equity participation <br>in projects</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6 col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6 col-xs-6">
+											<p  class="text-center"><span class="amount">400 000</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p>Pietro Voronov</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<ul class="media-list">
+							<li class="media media-main">
+								<div class="media-left">
+									<a href=""><img src="images/icon2.jpg" alt="icon2" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">History extinction <br>tyrannosaurs</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6 col-xs-6 col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6 col-xs-6 col-xs-6">
+											<p  class="text-center"><span class="amount">1600</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p>Zahar Perepilicin</p>
+								</div>
+							</li>
+							<li class="media media-main">
+								<div class="media-left">
+									<a href=""><img src="images/icon5.jpg" alt="icon5" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">Singing Musical <br>Mustache</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6  col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6  col-xs-6">
+											<p  class="text-center"><span class="amount">1600</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p>Ekaterina Dmitrieva</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<ul class="media-list">
+							<li class="media media-main">
+								<div class="media-left media-left-main">
+									<a href=""><img src="images/icon3.jpg" alt="icon3" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">A lecture about the <br>dangers of vegetarianism</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6  col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6  col-xs-6">
+											<p  class="text-center"><span class="amount">5000</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p>Leonid Sobolev</p>
+								</div>
+							</li>
+							<li class="media media-main">
+								<div class="media-left">
+									<a href=""><img src="images/icon6.jpg" alt="icon6" class="media-object"></a>
+								</div>
+								<div class="media-body">
+									<p class="color-blue">Stages of evolution <br>of cyborgs</p>
+									<p class="date">13 November / 15:00</p>
+									<div class="row col-1">
+										<div class="col-md-6 col-xs-6">
+											<p><img src="images/clock.png" alt="clock">120min</p>
+											<p><img src="images/man.png" alt="man">People</p>
+										</div>
+										<div class="col-md-6 col-xs-6">
+											<p  class="text-center"><span class="amount">1600</span> rub</p>
+											<p class="text-center"><span class="amount">12</span></p>
+										</div>
+									</div>
+									<p>James Cameron</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="knowledge">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-7">
+						<h2>You want to get knowledge?</h2>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-5"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-sm-12"><p class="categorie">Please become and begin to acquire knowledge. Quantity sessions indefinitely , it all depends on	your thirst for knowledge, practice 24 hours a day.</p>
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<button type="button" class="btn btn-lg btn-light-green" data-toggle="modal" data-target="#modal-1">I WANT TO LEARN</button>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-left-1">
+								<div class="block-text block-text-1">
+									<p><img src="images/screen.png" alt="screen"><span class="online">Online</span></p>
+									<p>All classes are held only in the mode online. Only interactive communication and learnin</p>
+								</div>
+								<div class="block-text">
+									<p><img src="images/airplane.png" alt="airplane"><span class="online">Ease</span></p>
+									<p>Simple, intuitive and user-friendly interface! No additional software installations security - proceed to employment immediately after registration.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="block-text">
+									<p><img src="images/clock-big.png" alt="clock-big"><span class="online">Time</span></p>
+									<p>Go in without leaving home ! Sign up, choose a suitable teacher and start acquire
+									knowledge right now</p>
+								</div>
+								<div class="block-text">
+									<p><img src="images/star.png" alt="star"><span class="online">Rating</span></p>
+									<p>Transparent rating system. The higher the rating – the better the result ! only real testimonials of actual users.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>	
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="row row-footer">
+				
+				<div class="col-md-2 col-sm-2">
+					<div class="col-left">
+						<a href="#" class="link-footer"><img src="images/iconB.png" alt="iconB"><span>For Tutors</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 text-center">
+					<form class="form-inline" id="form-3">
+						<div class="form-group has-feedback">
+							<label for="input-footer" class="line-label">News of the project</label>
+							<input type="email" class="form-control form-control-footer" id="input-footer" name="email" placeholder="e-mail adress" required="required">
+							<span class="glyphicon form-control-feedback"></span>
+						</div>
+						<button id="save-3" type="submit" class="btn btn-footer">SEND</button>
+					</form>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<ul class="list-unstyled list-inline text-center social1">
+									<li><a href="#"><span class="icon fb"></span></a></li>
+									<li><a href="#"><span class="icon vk"></span></a></li>
+									<li><a href="#"><span class="icon google"></span></a></li>
+									<li><a href="#"><span class="icon yandex"></span></a></li>
+									<li><a href="#"><span class="icon mail"></span></a></li>
+								</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/scill-donor.js"></script>
+</body>
+</html>
