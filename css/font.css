@@ -1,10 +1,10 @@
 @font-face{
 	font-family: 'MyriadPro-Light';
-	src: url(../fonts/MyriadProLight/'MyriadPro-Light.eot');
+	src: url('../fonts/MyriadProLight/MyriadPro-Light.eot');
 	src: url('../fonts/MyriadProLight/MyriadPro-Light.eot?#iefix') format('embedded-opentype');
 	src: url('../fonts/MyriadProLight/MyriadPro-Light.otf')  format('opentype');
-	src: url(../fonts/MyriadProLight/'MyriadPro-Light.woff') format('woff');
-	src: url(../fonts/MyriadProLight/'MyriadPro-Light.ttf') format('truetype');
+	src: url('../fonts/MyriadProLight/MyriadPro-Light.woff') format('woff');
+	src: url('../fonts/MyriadProLight/MyriadPro-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
