@@ -51,11 +51,15 @@
 						<div class="row">
 							<div class="col-md-1 col-sm-1"></div>
 							<div class="col-md-10 col-sm-10 col-list">
-								<form action="#" class="modal-form" id="form-1" method="post">
-									<div id="error" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
+								<form  class="modal-form" id="form-1" method="post">
+									<div class="alert alert-success hidden" id="successMessage">
+										<h2>Success</h2>
+										<div>Our data was successfully sent.</div>
+									</div>
+									<div class="col-sm-12 error" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="input-email">Email</label>
-										<input type="email" class="form-control" id="input-email" required="required" placeholder="Login/email" pattern="[A-z0-9_.-]{5,}" name="email">
+										<input type="email" class="form-control" id="input-email" required="required" placeholder="Login/email" name="email">
 										<span class="glyphicon form-control-feedback"></span>
 									</div>
 									<div class="form-group has-feedback">
@@ -73,16 +77,13 @@
 										<label for="check1"> I agree with <a href="#">the rules of the site</a></label>
 									</div>
 									<button id="save-1" type="submit" class="btn button-3">to come in</button>
+									
 								</form>
+
 							</div>
 							<div class="col-md-1 col-sm-1"></div>
 						</div>
-						<div class="container">
-							<div class="alert alert-success hidden alert-modal" id="success-alert">
-								<h2>Success</h2>
-								<div>Our data was successfully sent.</div>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -122,8 +123,12 @@
 						<div class="row">
 							<div class="col-md-1 col-sm-1"></div>
 							<div class="col-md-10 col-sm-10 col-list">
-								<form action="#" class="modal-form" id="form-2" method="post">
-									<div id="error-1" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
+								<form  class="modal-form" id="form-2" method="post">
+									<div class="alert alert-success hidden" id="successMessage">
+										<h2>Success</h2>
+										<div>Our data was successfully sent.</div>
+									</div>
+									<div class="error" class="col-sm-12" style="color: #ff0000; margin-top: 5px; margin-bottom: 5px;"></div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="input-email">Email</label>
 										<input type="email" class="form-control" id="input-email-1" name="email" required="required" placeholder="Login/email">
@@ -136,19 +141,13 @@
 									</div>
 									<div class="checkbox">
 										<input type="checkbox" id="check-2" name="checkbox">
-										<label for="check2"> Remember me </label>
+										<label for="check-2"> Remember me </label>
 										<a href="#" class="forgot">Forgot password?</a>
 									</div>
 									<button id="save-2"	type="submit" class="btn button-3">to come in</button>
 								</form>
 							</div>
 							<div class="col-md-1 col-sm-1"></div>
-						</div>
-						<div class="container">
-							<div class="alert alert-success hidden alert-modal" id="success-alert-1">
-								<h2>Success</h2>
-								<div>Our data was successfully sent.</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -202,10 +201,10 @@
 				<div class="row icon-png">
 					<div class="col-lg-4 col-md-4 col-sm-4 text-center panel-1">
 						<div class="block1">
-						<a href="#demo-2" data-toggle="collapse" data-parent="panel-1" aria-expanded="true"><img src="images/icon1.png" alt="icon1" class="img-responsive">
-							<p class="icon-text icon-text-1">Languages</p>
-						</a>
-					</div>
+							<a href="#demo-2" data-toggle="collapse" data-parent="panel-1" aria-expanded="true"><img src="images/icon1.png" alt="icon1" class="img-responsive">
+								<p class="icon-text icon-text-1">Languages</p>
+							</a>
+						</div>
 						<div id="demo-2" class="collapse in-main" aria-expanded="true">
 							
 						</div>
@@ -218,10 +217,10 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 						<div class="block2">
-						<a href="#demo-4" data-toggle="collapse" data-parent="icon-png" aria-expanded="true"><img src="images/icon5.png" alt="icon5" class="icon-png5 img-responsive">
-							<p class="icon-text">IT</p>
-						</a>
-					</div>
+							<a href="#demo-4" data-toggle="collapse" data-parent="icon-png" aria-expanded="true"><img src="images/icon5.png" alt="icon5" class="icon-png5 img-responsive">
+								<p class="icon-text">IT</p>
+							</a>
+						</div>
 						<div id="demo-4" class="collapse in-main"></div>
 						
 					</div>
@@ -229,10 +228,10 @@
 				<div class="row icon-png1">
 					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 						<div class="block1">
-						<a href="#demo-1" data-toggle="collapse" aria-expanded="true"><img src="images/icon2.png" alt="icon2" class="img-responsive">
-							<p class="icon-text">Art and Design</p>
-						</a>
-					</div>
+							<a href="#demo-1" data-toggle="collapse" aria-expanded="true"><img src="images/icon2.png" alt="icon2" class="img-responsive">
+								<p class="icon-text">Art and Design</p>
+							</a>
+						</div>
 						<div id="demo-1" class="collapse in in-main" aria-expanded="true">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4">
@@ -274,11 +273,11 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 						<div class="block2">
-						<a href="#demo-6" data-toggle="collapse" aria-expanded="true">
-							<img src="images/icon6.png" alt="icon6" class="icon-png6 img-responsive">
-							<p class="icon-text">History</p>
-						</a>
-					</div>
+							<a href="#demo-6" data-toggle="collapse" aria-expanded="true">
+								<img src="images/icon6.png" alt="icon6" class="icon-png6 img-responsive">
+								<p class="icon-text">History</p>
+							</a>
+						</div>
 						<div id="demo-6" class="collapse in-main"></div>
 					</div>
 				</div>		
@@ -298,7 +297,7 @@
 									<a href=""><img src="images/icon1.jpg" alt="icon1" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">Fundamentals <br>of Thermodynamics</p>
+									<p class="color-blue"><a href="#">Fundamentals <br>of Thermodynamics</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6 col-xs-6">
@@ -318,7 +317,7 @@
 									<a href=""><img src="images/icon4.jpg" alt="icon4" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">Equity participation <br>in projects</p>
+									<p class="color-blue"><a href="#">Equity participation <br>in projects</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6 col-xs-6">
@@ -342,7 +341,7 @@
 									<a href=""><img src="images/icon2.jpg" alt="icon2" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">History extinction <br>tyrannosaurs</p>
+									<p class="color-blue"><a href="#">History extinction <br>tyrannosaurs</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6 col-xs-6 col-xs-6">
@@ -362,7 +361,7 @@
 									<a href=""><img src="images/icon5.jpg" alt="icon5" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">Singing Musical <br>Mustache</p>
+									<p class="color-blue"><a href="#">Singing Musical <br>Mustache</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6  col-xs-6">
@@ -386,7 +385,7 @@
 									<a href=""><img src="images/icon3.jpg" alt="icon3" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">A lecture about the <br>dangers of vegetarianism</p>
+									<p class="color-blue"><a href="#">A lecture about the <br>dangers of vegetarianism</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6  col-xs-6">
@@ -406,7 +405,7 @@
 									<a href=""><img src="images/icon6.jpg" alt="icon6" class="media-object"></a>
 								</div>
 								<div class="media-body">
-									<p class="color-blue">Stages of evolution <br>of cyborgs</p>
+									<p class="color-blue"><a href="#">Stages of evolution <br>of cyborgs</a></p>
 									<p class="date">13 November / 15:00</p>
 									<div class="row col-1">
 										<div class="col-md-6 col-xs-6">
@@ -492,12 +491,12 @@
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<ul class="list-unstyled list-inline text-center social1">
-									<li><a href="#"><span class="icon fb"></span></a></li>
-									<li><a href="#"><span class="icon vk"></span></a></li>
-									<li><a href="#"><span class="icon google"></span></a></li>
-									<li><a href="#"><span class="icon yandex"></span></a></li>
-									<li><a href="#"><span class="icon mail"></span></a></li>
-								</ul>
+						<li><a href="#"><span class="icon fb"></span></a></li>
+						<li><a href="#"><span class="icon vk"></span></a></li>
+						<li><a href="#"><span class="icon google"></span></a></li>
+						<li><a href="#"><span class="icon yandex"></span></a></li>
+						<li><a href="#"><span class="icon mail"></span></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
