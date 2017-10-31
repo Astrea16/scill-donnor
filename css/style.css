@@ -76,7 +76,7 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-input[type=checkbox]:checked + label:before{
+input[type=checkbox]:checked + label:before, #check{
 	content: "\2713";
 	font-size: 20px;
 	color: #c2c2c2;
@@ -157,6 +157,9 @@ h2{
 p, .link-footer, footer form label{
 	font: 20px 'MyriadPro-Light',sans-serif;
 	color: #899097;
+}
+a:focus{
+	outline: none;
 }
 /*---------nav---------*/
 .container-fluid{
@@ -354,7 +357,7 @@ section.lectures{
 .media-left-2{
 	padding-left: 2%;
 }
-p.color-blue{
+p.color-blue > a{
 	color: #5ea5dd;
 	margin-bottom: 3%;
 }
@@ -502,21 +505,23 @@ p.date, .col-1 p{
 	.media-left-main{
 		padding-right: 2px;
 	}
-
+.form-control-footer{
+	font-size: 19px;
+}
 }
 @media(max-width: 991px){
 	.icon-png3 {
-		margin-top: -16%;
+		margin-top: -13% !important;
 	}
 	.icon-png6 {
-		margin-top: -3%;
+		margin-top: -3% !important;
 	}
 	.icon-png4 {
 		margin-top: 2%;
 	}
 	.btn-light-green{
 		margin-top: 5%;
-		margin-bottom: 7%;
+		margin-bottom: 15%;
 		padding: 2% 7%;
 		font-size: 20px;
 	}
@@ -565,21 +570,30 @@ p.date, .col-1 p{
 	.button-1{
 		margin-bottom: 5%;
 	}
-
+	.navbar-nav> li > .login {
+		margin-left: 0%;
+	}
 	h2{
-		font-size: 30px;
+		font-size: 26px;
 	}
 	.icon-png3,.icon-png4,.icon-png5, .icon-png6 {
-		margin-top: 5%;
+		margin-top: 5% !important;
 	}
-	.icon-png p{
-		font-size: 25px;
+	.icon-png p, .icon-png1 p{
+		font-size: 22px;
 	}
+	
 	.list-collapse >li {
 		margin-top: 10px;
 	}
 	.list-collapse >li >a{
 		font-size: 16px;
+	}
+	.list-collapse >li >a{
+		margin-left: 27%;
+	}
+	.list-collapse-2 >li >a {
+		margin-left: 28%;
 	}
 	.in-main{
 		width: 100%
@@ -593,11 +607,21 @@ p.date, .col-1 p{
 	.media-main, .media-main:last-child {
 		margin-bottom: 15%;
 	}
-	.block-text{
+
+	.block1 {
+		margin-left: 0;
+	}
+	.block2 {
+		margin-right: 0;
+	}
+	.block-text, .block-text-1, .block-text:last-child{
 		margin-bottom: 8%;
 	}
-	.block-text-1{
-		margin-bottom: 8%;
+	.col-left-1 .block-text {
+		margin-left: 0%;
+	}
+	.online{
+		font-size: 20px;
 	}
 	.col-left{
 		text-align: center;
@@ -609,8 +633,9 @@ p.date, .col-1 p{
 	}
 }
 @media(max-width: 475px){
-	p{
-		font-size: 18px;
+	p, .block-text > p, p.date, .btn-light-green,.link-footer, footer form label,
+	.form-control-footer{
+		font-size: 15px;
 	}
 	.nav > li >a{
 		display: inline-block;
@@ -625,17 +650,24 @@ p.date, .col-1 p{
 	.navbar>.container-fluid .navbar-brand {
 		margin-left: 0;
 	}
+	.navbar-nav> li > a.btn-blue {
+		width: 44%;
+		margin-left: 4.5%;
+	}
 	header h1{
 		font-size: 33px;
 	}
 	header p{
 		font-size: 18px;
 	}
-	p.date{
-		font-size: 16px;
-	}
+	
 	.col-1 p{
 		font-size: 14px;
+	}
+}
+@media(max-width: 375px){
+	.icon{
+		margin-right: 20px;
 	}
 }
 @media(max-width: 320px){
@@ -644,6 +676,6 @@ p.date, .col-1 p{
 		padding-right: 32%;
 	}
 	.icon{
-		margin-right: 10px;
+		margin-right: 7px;
 	}
 }
